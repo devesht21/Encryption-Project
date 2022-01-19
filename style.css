@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5256ad;
+  font-family: montserrat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  color: white;
+  line-height: 59px;
+
+  text-align: center;
+  margin: 50px 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.center h2 {
+  text-align: center;
+  font-size: 32px;
+  padding: 20px 0;
+
+  border-bottom: 1px solid silver;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.form-elements {
+  padding: 0 40px;
+}
+
+form .text-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+}
+
+.text-field input {
+  height: 40px;
+  width: 100%;
+  padding: 0 5px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.text-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.text-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2691d9;
+  transition: 0.5s;
+}
+
+.text-field input:focus ~ label,
+.text-field input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.text-field input:focus ~ span::before,
+.text-field input:valid ~ span::before {
+  width: 100%;
+}
+
+.pass {
+  margin: -5px 0 15px 20px;
+  color: #adadad;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pass:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  border-color: #2691d9;
+}
+
+.or {
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.google-login {
+  height: 50px;
+  width: 100%;
+  /* background: chartreuse; */
+  border-radius: 25px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  transition: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.google-login:hover {
+  background: black;
+  border: none;
+}
+
+.google-login:hover a {
+  color: white;
+}

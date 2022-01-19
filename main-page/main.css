@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5256ad;
+  font-family: montserrat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  color: white;
+  line-height: 59px;
+
+  text-align: center;
+  margin: 50px 0;
+}
+
+.drag-area {
+  border: 2px dashed #fff;
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active {
+  border: 2px solid #fff;
+}
+.drag-area .icon {
+  font-size: 100px;
+  color: #fff;
+}
+.drag-area header,
+.file-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  /* font-weight: 500; */
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #5256ad;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drag-area button:hover {
+  background: #55c57a;
+  color: white;
+}
+
+/* .drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+} */
+
+a:link,
+a:visited {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 50px 224.325px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: white;
+  color: #5256ad;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+}
+
+.file-area {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: rgb(255, 255, 255, 0.2);
+  z-index: -1;
+
+  transition: 0.5s;
+}
+
+.file-area:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.file-area header {
+  color: black;
+}
